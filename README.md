@@ -2,6 +2,9 @@
 
 A profile for the Siren herself.
 
+![Screenshot 2024-09-26 075806](https://github.com/user-attachments/assets/91e876ce-77c8-4333-8218-cd9c47c24992)
+![Screenshot 2024-09-26 075827](https://github.com/user-attachments/assets/98269b45-2b48-4191-aa0d-44ecebf98fd4)
+
 ## Getting Started
 
 This project is a starting point for a Flutter application.
