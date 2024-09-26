@@ -71,7 +71,7 @@ class Siren extends StatelessWidget {
                               ),
                               const SizedBox(height: 10),
                               const Text(
-                                'Siren',
+                                'Vincensius Marcel Suhendar',
                                 style: TextStyle(
                                   fontSize: 20,
                                   fontWeight: FontWeight.bold,
@@ -80,7 +80,7 @@ class Siren extends StatelessWidget {
                               ),
                               const SizedBox(height: 10),
                               const Text(
-                                'Mythological Figure and icon of Starbucks. Passionate about brewing the perfect cup of coffee every day.',
+                                'Fullstack developer, and interested in Artificial Intellegence. Happy knowing you soon.',
                                 style: TextStyle(
                                   fontSize: 16,
                                   fontFamily: 'Roboto',
@@ -165,7 +165,7 @@ class ProfilePage extends StatelessWidget {
                     ),
                     const SizedBox(height: 10),
                     const Text(
-                      'Siren',
+                      'Vincensius Marcel Suhendar',
                       style: TextStyle(
                         fontSize: 24,
                         fontWeight: FontWeight.bold,
@@ -196,7 +196,7 @@ class ProfilePage extends StatelessWidget {
                         ),
                         SizedBox(height: 10),
                         Text(
-                          'I am a mythological figure and icon of Starbucks. I am passionate about brewing the perfect cup of coffee every day.',
+                          'I am an aspiring student who wishes to become the absolute best version of myself.',
                           style: TextStyle(
                             fontSize: 16,
                             fontFamily: 'Roboto',
@@ -226,7 +226,7 @@ class ProfilePage extends StatelessWidget {
                         ),
                         SizedBox(height: 10),
                         Text(
-                          'I have been working in the coffee industry for over 5 years, specializing in brewing the perfect cup of coffee.',
+                          'I have been attending SMK Wikrama learning web and game development for the past 2 years, and have real work experience as an intern in Argenta.',
                           style: TextStyle(
                             fontSize: 16,
                             fontFamily: 'Roboto',
@@ -256,7 +256,7 @@ class ProfilePage extends StatelessWidget {
                         ),
                         SizedBox(height: 10),
                         Text(
-                          '• Dart\n• Flutter\n• JavaScript\n• Python\n• Java',
+                          '• Laravel\n• Python\n• Javascript\n• Express\n• Vue\n• Tailwind\n• Flutter\n• MySQL\n• PostgreSQL\n• C#\n• Photoshop\n• Unity\n\n And the ability to learn more.',
                           style: TextStyle(
                             fontSize: 16,
                             fontFamily: 'Roboto',
