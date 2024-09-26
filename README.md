@@ -1,6 +1,6 @@
-# flutter_application_1
+# starbucks
 
-A new Flutter project.
+A profile for the Siren herself.
 
 ## Getting Started
 
