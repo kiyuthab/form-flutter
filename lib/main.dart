@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:siren/login.dart';
+import 'package:flutter_custom_clippers/flutter_custom_clippers.dart';
 
 void main() => runApp(const MyApp());
 
@@ -7,10 +9,9 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
-      title: 'Starbucks',
-      home: Siren(),
-    );
+    return MaterialApp(title: 'Starbucks', home: const LoginPage(), routes: {
+      '/main': (context) => const Siren(),
+    });
   }
 }
 
@@ -22,6 +23,37 @@ class Siren extends StatelessWidget {
     return MaterialApp(
       title: 'Starbucks',
       home: Scaffold(
+        extendBodyBehindAppBar: true,
+        appBar: PreferredSize(
+          preferredSize: const Size.fromHeight(70.0),
+          child: ClipPath(
+            clipper: WaveClipperOne(),
+            child: Container(
+              decoration: const BoxDecoration(
+                gradient: LinearGradient(
+                  colors: [Color(0xFFB22627), Color(0xFFF05D5E)],
+                  begin: Alignment.topLeft,
+                  end: Alignment.bottomRight,
+                ),
+              ),
+              child: AppBar(
+                elevation: 0.0,
+                backgroundColor: Colors.transparent,
+                leading: IconButton(
+                  icon: const Icon(Icons.logout),
+                  color: Colors.white,
+                  onPressed: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) => const LoginPage()),
+                    );
+                  },
+                ),
+              ),
+            ),
+          ),
+        ),
         body: Stack(
           children: [
             Container(
