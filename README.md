@@ -2,6 +2,8 @@
 
 A profile for the Siren herself.
 
+![screenshot-1728634041505](https://github.com/user-attachments/assets/b3f0696e-23ef-416f-a788-fb79e6c22d2d)
+![screenshot-1728634006258](https://github.com/user-attachments/assets/b4f0ab56-a329-4478-80f1-ce58ae9f82da)
 ![Screenshot 2024-09-26 075806](https://github.com/user-attachments/assets/91e876ce-77c8-4333-8218-cd9c47c24992)
 ![Screenshot 2024-09-26 075827](https://github.com/user-attachments/assets/98269b45-2b48-4191-aa0d-44ecebf98fd4)
 
