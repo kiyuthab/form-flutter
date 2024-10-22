@@ -10,7 +10,6 @@ class FormPage extends StatefulWidget {
 }
 
 class FormPageState extends State<FormPage> {
-  late VideoPlayerController _controller;
   final TextEditingController _usernameController = TextEditingController();
   final TextEditingController _roleController = TextEditingController();
   final TextEditingController _schoolController = TextEditingController();
@@ -18,26 +17,7 @@ class FormPageState extends State<FormPage> {
   final GlobalKey<FormState> _formKey = GlobalKey<FormState>();
 
   @override
-  void initState() {
-    super.initState();
-    _controller = VideoPlayerController.asset('assets/background.mp4')
-      ..initialize().then((_) {
-        if (mounted) {
-          setState(() {
-            if (_controller.value.isInitialized) {
-              _controller.play();
-              _controller.setLooping(true);
-            }
-          });
-        }
-      }).catchError((error) {
-        print('Video initialization error: $error');
-      });
-  }
-
-  @override
   void dispose() {
-    _controller.dispose();
     _usernameController.dispose();
     _roleController.dispose();
     _schoolController.dispose();
@@ -67,16 +47,10 @@ class FormPageState extends State<FormPage> {
       body: Stack(
         fit: StackFit.expand,
         children: <Widget>[
-          _controller.value.isInitialized
-              ? FittedBox(
-                  fit: BoxFit.cover,
-                  child: SizedBox(
-                    width: _controller.value.size.width,
-                    height: _controller.value.size.height,
-                    child: VideoPlayer(_controller),
-                  ),
-                )
-              : Container(),
+          Image.asset(
+            'assets/background.jpg',
+            fit: BoxFit.cover,
+          ),
           Container(
             color: Colors.black.withOpacity(0.5),
             child: Padding(

@@ -9,7 +9,7 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(title: 'Starbucks', home: const FormPage(), routes: {
+    return MaterialApp(title: 'Profile', home: const FormPage(), routes: {
       '/main': (context) => const Siren(
             username: '',
             role: '',
@@ -37,10 +37,11 @@ class Siren extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Starbucks',
+      title: 'Profile',
       home: Scaffold(
         extendBodyBehindAppBar: true,
         appBar: PreferredSize(
+
           preferredSize: const Size.fromHeight(70.0),
           child: ClipPath(
             clipper: WaveClipperOne(),
@@ -75,7 +76,7 @@ class Siren extends StatelessWidget {
             Container(
               decoration: const BoxDecoration(
                 image: DecorationImage(
-                  image: AssetImage('assets/bg.jpg'),
+                  image: AssetImage('assets/background.jpg'),
                   fit: BoxFit.cover,
                 ),
               ),
@@ -89,14 +90,7 @@ class Siren extends StatelessWidget {
                     child: Container(
                       decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(15),
-                        gradient: const LinearGradient(
-                          colors: [
-                            Color.fromARGB(255, 255, 240, 213),
-                            Color.fromARGB(255, 219, 233, 255)
-                          ],
-                          begin: Alignment.centerLeft,
-                          end: Alignment.centerRight,
-                        ),
+                        color: Colors.white
                       ),
                       child: Card(
                         elevation: 0,
@@ -111,7 +105,7 @@ class Siren extends StatelessWidget {
                             children: [
                               ClipOval(
                                 child: Image.asset(
-                                  "assets/logo.png",
+                                  "assets/logo.jpeg",
                                   width: 100,
                                   height: 100,
                                   fit: BoxFit.cover,
